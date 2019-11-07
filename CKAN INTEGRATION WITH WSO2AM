@@ -7,4 +7,5 @@ When iinstalled the latest version of Oauth2 plugin in CKAN and then tried to in
  After submitting the credentials, user gets redirected to CKAN but with an additional string appended in the callback Oauth2 URL i.e. "/wso2am/ckan/"
  If we remove this additional string "/wso2am/ckan/" from callback Oauth2 URL, user gets logged in successfully in CKAN.
 
- 
+ Why we not logged in directly to ckan ?
+ How to resolve this extra appending string "/wso2am/ckan" ?
