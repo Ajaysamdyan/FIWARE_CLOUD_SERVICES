@@ -1,0 +1,10 @@
+When iinstalled the latest version of Oauth2 plugin in CKAN and then tried to integrate it with WSO2. However, while attempting to login in CKAN using Oauth2, we have observed the following scenario:
+
+ After clicking on login button at CKAN's home page, user gets redirected to WSO2 authentication page. 
+ Here, the same credentials need to be entered with which the CKAN application is registered at WSO2.
+ After submitting the credentials, user gets redirected to the wso2am/carbon login page for another authentication.
+ Here, the same credentials need to be entered again.
+ After submitting the credentials, user gets redirected to CKAN but with an additional string appended in the callback Oauth2 URL i.e. "/wso2am/ckan/"
+ If we remove this additional string "/wso2am/ckan/" from callback Oauth2 URL, user gets logged in successfully in CKAN.
+
+ 
